@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  #root {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px auto auto;
+    grid-template-areas: "header" "main" "footer";
+  }
+  
+  .header {
+    grid-area: header;
+    color: white;
+    background-color: rgb(1, 24, 35);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+  }
+  .header .header__links {
+    display: flex;
+    text-decoration-style: none;
+    padding-right: 10%;
+  }
+  .header .header__logo {
+    padding-left: 3%;
+    display: flex;
+    align-items: center;
+  }
+  .header .header__title {
+    padding-left: 5%;
+    margin: 0;
+  }
+  .header .header__title h1 {
+    font-size: 1.5625rem;
+    margin: 0% 0% 0% 0%;
+  }
+  .header .header__title p {
+    font-size: 1rem;
+    margin: 0% 0% 0% 0%;
+  }
+  .header__menu {
+    display: flex;
+    max-width: 500px;
+    text-decoration: none;
+    padding-right: 10%;
+  }
+
+  .header__link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 0% 2%;
+  }
+  
+  .main {
+    grid-area: main;
+  }
+  .main .main__info {
+    padding: 3% 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .main .main__info p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .main .main__welcome {
+    width: 21.875rem;
+  }
+  
+  .footer {
+    background-color: rgb(1, 24, 35);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.25rem;
+
+  }
+  .footer .pilares__card {
+    padding: 5% 0;
+    width: 15.625rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .pilares__card p {
+    font-size: 1rem;
+    color: rgb(156, 156, 156);
+  }
+  
+  
+  @media (min-width: 768px) {
+    .footer {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .footer .pilares__card {
+      padding: 5% 0;
+      width: 18.75rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer .pilares__card p {
+      font-size: 0.8rem;
+      color: rgb(156, 156, 156);
+    }
+  }
+  @media (min-width: 1200px) {
+    .footer {
+      height: auto;
+    }
+    .footer .pilares__card {
+      width: 12.5rem;
+      margin-right: 5%;
+    }
+    .footer .pilares__card p {
+      font-size: 1rem;
+    }
+    .footer .pilares__info {
+      padding-right: 4%;
+      border-right: solid;
+      border-right-width: thin;
+      border-right-color: rgb(156, 156, 156);
+    }
+  }
+  
